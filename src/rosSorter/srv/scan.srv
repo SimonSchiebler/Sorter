@@ -1,0 +1,6 @@
+int64 xDiff
+int64 yDiff
+int64 xRange
+int64 yRange
+---
+sensor_msgs/CompressedImage img

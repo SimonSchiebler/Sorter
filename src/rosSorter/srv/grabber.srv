@@ -1,0 +1,4 @@
+uint64 command
+uint64 actuationtime
+uint64 airregulationtime
+---
