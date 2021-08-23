@@ -1,7 +1,7 @@
 # Sorter
 This Repository contains code and documentation for a memory card sorting robot i built for a course at my university. 
 The robot is capable of scanning a flat surface, detecting memory cards on it and sort them using a pneumatic grabber.
-You can see the robot in action [here](https://www.youtube.com/watch?v=8ajy1oJylLM)
+You can see the robot in action [here](https://www.youtube.com/watch?v=tIvVmxNrGwk)
 
 ## Hardware
 The main control components of the robot are a Raspberry-Pi and a BTT SKR 1.4 .
