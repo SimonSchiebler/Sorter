@@ -5,18 +5,14 @@ You can see the robot in action [here](https://www.youtube.com/watch?v=8ajy1oJyl
 
 ## Hardware
 The main control components of the robot are a Raspberry-Pi and a BTT SKR 1.4 .
-The SKR is a 3D printer board and is used to drive the stepper motors and to control all physical components of the robot via its GPIO pins.
-The advantage of using a 3D Printer board for this application is that it is very well documented and easy to control using G-Code sent over a USB connection. This way we can create a Hardware abstraction layer for our main code ridding us of the need to write logic for endstop-detection, homing, coordinate translation etc.
-The Raspberry-Pi is there to run all the logic and to facilitate usage by exposing SSH access and providing a user interface via a touchscreen monitor.
+The SKR is a 3D printer board intended to drive the stepper motors and to control all physical components of the robot via its GPIO pins.
+The advantage of using a 3D Printer board for this application is that it is very well documented and easy to control using G-Code sent over a USB connection. This way we can use the Marlin funtions for endstop-detection, homing, coordinate translation etc. by calling them with G-Code commands.
+The Raspberry-Pi is there to run all the main logic like Image-Processing and Coordination of the Sled. Also it facilitates access to the system by exposing SSH via Wifi and providing the user with a touchscreen interface.
 
-Further a small vacuum pump bought for 9€ from amazon, a pneumatic piston and a solenoid valve enable for picking and placing of the cards.
+Further a small vacuum pump, a pneumatic piston and a solenoid valve enable for picking and placing of the cards.
 The pneumatic system is powered by an external airbrush comressor.
 
 The camera is a 5MP Waveshare Raspberry Pi camera mounted directly on the sled. For illumination a household led strip is used that is hooked up in series with a potentiometer to the power source.
-
-The sled and some further structural components were modeled in Fusion 360 and 3D printed. The .stl files can be found in this repository.
-
-Schematics will follow once i figure out how to draw them properly.
 
 ## Software
 The whole system uses the Robot operating system ([ROS Melodic](http://wiki.ros.org/melodic)).
